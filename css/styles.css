@@ -92,6 +92,15 @@ color: #434455;
 .address-menu .link:focus {        
         color: #404bbf;
 }
+.hover-item::after {
+    display: block;
+    content: '';
+    border-radius: 2px;
+    width: 48px;
+    height: 4px;
+    background: #404bbf;
+}
+
 /*-++==--------===++++--*/
 
 .header-container{
@@ -120,8 +129,12 @@ color: #434455;
     padding: 120px 0;
 }
 .section-hero{
-    padding: 188px 0;
     background: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(
+               rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+             url(../images/hero_img.jpg);
 }
 .section-hero .title{
 font-weight: 700;
@@ -194,6 +207,7 @@ position: absolute;
     gap: 24px;
 }
 .section-features .item {
+   
     width: calc((100% - 72px) / 4);
 }
 /*---------3----------*/
@@ -238,11 +252,24 @@ background-color: #F4F4FD;
     gap: 24px;
 }
 .section-our_team .list .item{
+   
     width: calc((100% - 72px) / 4);
 }
 .section-our_team .container-item{
     padding: 32px 0;
 }
+.icons-social-list{
+    display: flex;
+    gap: 24px;
+/*                       */
+}
+.section-our_team .list>.item{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+     0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
+} 
+
 /*------------4-------------*/
 .section-our_portfolio .section-title{
         font-weight: 700;
@@ -286,7 +313,13 @@ background-color: #F4F4FD;
     border-right: 1px solid #e7e9fc;
     
 }
- 
+  .section-our_portfolio .list .item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+               0 1px 1px 0 rgba(46, 47, 66, 0.16),
+                 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+ } 
+ /*box-shadow: <x-offset><y-offset>
+               <blur><spread><color> */
 /*----------footer-------------*/
 
 .footer-page .text {
@@ -307,4 +340,23 @@ background-color: #F4F4FD;
 .footer-page .link{
     display: inline-block;
     margin-bottom: 16px;
+}
+.footer-page .title {
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+}
+.footer-container{
+    display: flex;
+}
+.container-social-media{
+    width: 208px;
+}
+
+.icon{
+width: 40px;
+ height: 40px;
 }
