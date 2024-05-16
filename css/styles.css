@@ -57,7 +57,10 @@ img{
     color: #4d5ae5;
     margin-right: 76px;
 }
-
+.nav-current-link {
+    position: relative;
+    color: #404bbf;
+}
 .nav-menu .span-item {
     color: #2e2f42;
 }
@@ -75,7 +78,7 @@ img{
 }
 .nav-current-link {
     position: relative;
-    color: #404bbf;
+    color:#404bbf;
 }
 .address-menu{
     margin-left: auto;
